@@ -215,6 +215,7 @@
         const form = document.getElementById('contactForm');
         form.addEventListener('submit', function(e) {
             // 表单会提交到formsubmit服务发送邮件，这里只做提示
+            e.preventDefault();
             alert('Your message has been submitted successfully! We will get back to you within 24 business hours.');
         });
     </script>
